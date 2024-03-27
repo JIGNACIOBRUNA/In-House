@@ -32,7 +32,86 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "create Chatbot",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"bot5\",\r\n  \"description\": \"creo que quinto bot creado\",\r\n  \"state\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/chatbots",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"chatbots"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "156"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9c-hZqhsvcF7HRQiHALs63lD9j4MNQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Mar 2024 04:40:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"name\": \"bot5\",\n    \"description\": \"creo que quinto bot creado\",\n    \"state\": true,\n    \"updatedAt\": \"2024-03-27T04:40:34.989Z\",\n    \"createdAt\": \"2024-03-27T04:40:34.989Z\"\n}"
+				}
+			]
 		},
 		{
 			"name": "get all Chatbot",
@@ -63,7 +142,86 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "get all Chatbot",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/chatbots",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"chatbots"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "987"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3db-iuI3pWKrrFGPwJSV6sHlcuELjMk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Mar 2024 04:58:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Mi nuevo chatbot\",\n        \"description\": \"Descripción de mi nuevo chatbot\",\n        \"state\": true,\n        \"createdAt\": \"2024-03-27T02:37:49.316Z\",\n        \"updatedAt\": \"2024-03-27T02:37:49.316Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Mi nuevo chatbot2\",\n        \"description\": \"Descripción de mi nuevo chatbot2\",\n        \"state\": true,\n        \"createdAt\": \"2024-03-27T02:44:34.214Z\",\n        \"updatedAt\": \"2024-03-27T02:44:34.214Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Mi nuevo chatbot4\",\n        \"description\": \"Descripción de mi nuevo chatbot4\",\n        \"state\": true,\n        \"createdAt\": \"2024-03-27T02:50:28.963Z\",\n        \"updatedAt\": \"2024-03-27T02:50:28.963Z\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"bot1\",\n        \"description\": \"primer bot creado\",\n        \"state\": false,\n        \"createdAt\": \"2024-03-27T00:22:56.508Z\",\n        \"updatedAt\": \"2024-03-27T03:11:21.856Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"bot2\",\n        \"description\": \"segundo bot creado\",\n        \"state\": false,\n        \"createdAt\": \"2024-03-27T01:51:17.412Z\",\n        \"updatedAt\": \"2024-03-27T03:16:08.525Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"bot5\",\n        \"description\": \"creo que quinto bot creado\",\n        \"state\": false,\n        \"createdAt\": \"2024-03-27T04:40:34.989Z\",\n        \"updatedAt\": \"2024-03-27T04:41:58.178Z\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "delete Chatbot",
@@ -92,7 +250,87 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "delete Chatbot",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/chatbots/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"chatbots",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-xnVPswL/gFYkRMOEnhnchMAS6G4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Mar 2024 04:41:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Chatbot deshabilitado exitosamente\"\n}"
+				}
+			]
 		},
 		{
 			"name": "ask Chatbot",
@@ -122,7 +360,88 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "ask Chatbot",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"¿Cuál es tu nombre?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/chatbots/3/ask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"chatbots",
+								"3",
+								"ask"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a-yIh6y9k9e93ckIV4+mL6tZCv0zg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Mar 2024 04:44:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Mi nombre es Mi nuevo chatbot, y mi ID es 3.\"\n}"
+				}
+			]
 		}
 	]
 }

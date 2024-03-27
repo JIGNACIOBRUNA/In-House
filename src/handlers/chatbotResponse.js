@@ -12,10 +12,10 @@ const staticResponse = async (id, question) => {
         }
         let response;
         switch (question.toLowerCase()) {
-            case '¿cuál es tu nombre?':
+            case '¿cual es tu nombre?':
                 response = `Mi nombre es ${existingChatBot.name}, y mi ID es ${id}.`;
                 break;
-                case '¿cuál es tu función?':
+                case '¿cual es tu funcion?':
                 response = `Soy un bot diseñado para responder preguntas de manera simulada. Chatbot ID: ${question}`;
                 break;
                 default:
