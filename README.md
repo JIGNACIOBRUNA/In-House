@@ -7,12 +7,12 @@
 ### Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde nodejs.org.
 ### Este proyecto utiliza una base de datos PostgreSQL. Asegúrate de tener PostgreSQL instalado y configurado correctamente. 
 
-1. Clona este repositorio en tu máquina local:
+## Clona este repositorio en tu máquina local:
 ### git clone https://github.com/JIGNACIOBRUNA/In-House.git
 ### Navega hasta el directorio del proyecto:
-###cd API-In-House
+### cd API-In-House
 
-2. Instala las dependencias del proyecto usando npm:
+## Instala las dependencias del proyecto usando npm:
 ### npm install
 
 ## Configuración
@@ -34,10 +34,15 @@ DB_PORT=3001
 2. El servidor estará disponible en: http://localhost:3001
 
 ### Dependencias 
+
+```plaintext
 axios: ^1.6.8
 cors: ^2.8.5
 dotenv: ^16.4.5
 express: ^4.19.2
 pg: ^8.11.3
 sequelize: ^6.37.1
+jest: "^29.7.0",
+supertest: "^6.3.4"
+```
 
