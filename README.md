@@ -45,6 +45,13 @@ DB_PORT=3001
 1. Ejecuta el servidor: "npm start"
 2. El servidor estará disponible en: http://localhost:3001
 
+### Uso  
+Crear un nuevo chatbot  
+URL: /chatbots  
+Método HTTP: POST  
+Body: 
+
+
 ### Uso 
 Crear un nuevo chatbot 
  URL: /chatbots 
