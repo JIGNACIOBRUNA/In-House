@@ -4,13 +4,13 @@
 
 ## Instalacion 
 
-### Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde nodejs.org.
+### Asegúrate de tener instalado Node.js en tu sistema.
 ### Este proyecto utiliza una base de datos PostgreSQL. Asegúrate de tener PostgreSQL instalado y configurado correctamente. 
 
 ## Clona este repositorio en tu máquina local:
-### git clone https://github.com/JIGNACIOBRUNA/In-House.git
+git clone https://github.com/JIGNACIOBRUNA/In-House.git
 ### Navega hasta el directorio del proyecto:
-### cd API-In-House
+cd API-In-House
 
 ## Instala las dependencias del proyecto usando npm:
 ### npm install
@@ -46,3 +46,25 @@ jest: "^29.7.0",
 supertest: "^6.3.4"
 ```
 
+### Uso 
+Crear un nuevo chatbot
+ URL: /chatbots
+ Método HTTP: POST
+ Body:
+ ```plaintext
+{
+  "name": "Nombre del Chatbot",
+  "description": "Descripción del Chatbot"
+}
+```
+Respuesta Exitosa:
+```plaintext
+{
+  "id": 1,
+  "name": "Nombre del Chatbot",
+  "description": "Descripción del Chatbot",
+  "state": true,
+  "createdAt": "2024-03-27T02:37:49.316Z",
+  "updatedAt": "2024-03-27T02:37:49.316Z"
+}
+```
