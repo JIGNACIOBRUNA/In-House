@@ -4,16 +4,16 @@
 
 ## Instalacion 
 
-### Asegúrate de tener instalado Node.js en tu sistema.
-### Este proyecto utiliza una base de datos PostgreSQL. Asegúrate de tener PostgreSQL instalado y configurado correctamente. 
+ Asegúrate de tener instalado Node.js en tu sistema.
+ Este proyecto utiliza una base de datos PostgreSQL. Asegúrate de tener PostgreSQL instalado y configurado correctamente. 
 
 ## Clona este repositorio en tu máquina local:
-git clone https://github.com/JIGNACIOBRUNA/In-House.git
-### Navega hasta el directorio del proyecto:
-cd API-In-House
+ git clone https://github.com/JIGNACIOBRUNA/In-House.git
+ Navega hasta el directorio del proyecto:
+ cd API-In-House
 
 ## Instala las dependencias del proyecto usando npm:
-### npm install
+ npm install
 
 ## Configuración
 
@@ -66,5 +66,45 @@ Respuesta Exitosa:
   "state": true,
   "createdAt": "2024-03-27T02:37:49.316Z",
   "updatedAt": "2024-03-27T02:37:49.316Z"
+}
+```
+Listar todos los chatbots
+ URL: /chatbots
+ Método HTTP: GET
+ Respuesta Exitosa:
+ ```plaintext
+[
+  {
+    "id": 1,
+    "name": "Nombre del Chatbot",
+    "description": "Descripción del Chatbot",
+    "state": true,
+    "createdAt": "2024-03-27T02:37:49.316Z",
+    "updatedAt": "2024-03-27T02:37:49.316Z"
+  }
+]
+```
+Eliminar un chatbot
+ URL: /chatbots/:id
+ Método HTTP: DELETE
+ Respuesta Exitosa:
+  ```plaintext
+{
+  "message": "Chatbot deshabilitado exitosamente"
+}
+```
+Enviar una pregunta a un chatbot
+ URL: /chatbots/:id/ask
+ Método HTTP: POST
+ Body:
+  ```plaintext
+{
+  "question": "¿Cuál es tu nombre?"
+}
+```
+Respuesta Exitosa:
+```plaintext
+{
+  "message": "Mi nombre es Nombre del Chatbot, y mi ID es :id."
 }
 ```
