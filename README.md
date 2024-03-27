@@ -51,12 +51,6 @@ URL: /chatbots
 Método HTTP: POST  
 Body: 
 
-
-### Uso 
-Crear un nuevo chatbot 
- URL: /chatbots 
- Método HTTP: POST 
- Body: 
  ```plaintext
 {
   "name": "Nombre del Chatbot",
@@ -74,10 +68,10 @@ Respuesta Exitosa:
   "updatedAt": "2024-03-27T02:37:49.316Z"
 }
 ```
-Listar todos los chatbots
- URL: /chatbots
- Método HTTP: GET
- Respuesta Exitosa:
+Listar todos los chatbots  
+URL: /chatbots  
+Método HTTP: GET  
+Respuesta Exitosa:  
  ```plaintext
 [
   {
@@ -90,19 +84,19 @@ Listar todos los chatbots
   }
 ]
 ```
-Eliminar un chatbot
- URL: /chatbots/:id
- Método HTTP: DELETE
- Respuesta Exitosa:
+Eliminar un chatbot  
+URL: /chatbots/:id  
+Método HTTP: DELETE  
+Respuesta Exitosa:  
   ```plaintext
 {
   "message": "Chatbot deshabilitado exitosamente"
 }
 ```
-Enviar una pregunta a un chatbot
- URL: /chatbots/:id/ask
- Método HTTP: POST
- Body:
+Enviar una pregunta a un chatbot  
+URL: /chatbots/:id/ask  
+Método HTTP: POST  
+Body: 
   ```plaintext
 {
   "question": "¿Cuál es tu nombre?"
