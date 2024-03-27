@@ -1,6 +1,6 @@
 # In-House
 
-### Proyecto que consiste en una API REST desarrollada en Node.js. Permite a los crear, listar y eliminar/deshabilitar chatbots, además de enviar preguntas y recibir respuestas simuladas de los chatbots creados. 
+### Proyecto que consiste en una API REST desarrollada en Node.js. Permite crear, listar y eliminar/deshabilitar chatbots, además de enviar preguntas y recibir respuestas simuladas de los chatbots creados. 
 
 ## Instalacion 
 
