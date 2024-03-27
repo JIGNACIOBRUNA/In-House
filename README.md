@@ -8,9 +8,9 @@
  Este proyecto utiliza una base de datos PostgreSQL. Asegúrate de tener PostgreSQL instalado y configurado correctamente. 
 
 ## Clona este repositorio en tu máquina local:
- git clone https://github.com/JIGNACIOBRUNA/In-House.git
- Navega hasta el directorio del proyecto:
- cd API-In-House
+ ####git clone https://github.com/JIGNACIOBRUNA/In-House.git
+ ####Navega hasta el directorio del proyecto:
+ ###cd API-In-House
 
 ## Instala las dependencias del proyecto usando npm:
  npm install
